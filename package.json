@@ -1,0 +1,40 @@
+{
+  "name": "ldapauth-fork-mca",
+  "version": "1.0.0",
+  "description": "",
+  "main": "./lib/ldapauth.js",
+  "scripts": {
+    "lint": "eslint ./lib",
+    "lint:watch": "watch 'npm run lint' ./lib --wait 0.5",
+    "prepublish": "npm run lint",
+    "pretest": "cd test && tsc",
+    "test": "cd test && node test.js"
+  },
+  "dependencies": {
+    "@types/node": "^7.0.21",
+    "bcryptjs": "^2.4.0",
+    "ldapjs-mca": "1.0.0",
+    "lru-cache": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/bunyan": "0.0.36",
+    "bunyan": "^1.8.10",
+    "eslint": "^3.19.0",
+    "typescript": "^2.3.3",
+    "watch": "^1.0.2"
+  },
+  "engines": {
+    "node": ">=0.8.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/farheen14aslam/ldapauth-fork-mca.git"
+  },
+  "types": "./lib/ldapauth.d.ts",
+  "author": "Farheen Aslam",
+  "license": "MIT",
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}
